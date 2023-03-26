@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../styles/header-footer.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container-main">
+    <header class="container-header container-fluid">
+      <nav class="container-nav navbar container">
+        <a class="nav-link" href="../index.html">HOME</a>
+        <a class="nav-link" href="about-me.html">ABOUT ME</a>
+        <a class="nav-link" href="resume.html">RESUME</a>
+        <a class="nav-link" href="portfolio-gallery.html">PORTFOLIO GALLERY</a>
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    
+    <div class="container-main-content">
+      <figure>
+        <div class="container-image">
+          <img class="contact-me-image" src="../images/contact-page-image.jpg" alt="image not found">
+          <div class="contact-me-message">Contact Me</div>
+        </div>
+      </figure>
+  
+      <div class="container-form">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+          <div class="input-label-top container-input">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="input-label-top container-input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="input-label-top container-input message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="7" required></textarea>
+          </div>
+          <div class="container-check">
+            How did you hear about me?
+            <div>
+              <input type="checkbox" value="classmate" name="hearaboutme" id="classmate">
+              <label for="classmate"> Classmate</label>
+            </div>
+            <div>
+              <input type="checkbox" value="resume submission" name="hearaboutme" id="resumesubmission">
+              <label for="resumesubmission"> Resume submission</label>
+            </div>
+            <div>
+              <input type="checkbox" value="linkedin" name="hearaboutme" id="linkedin">
+              <label for="linkedin"> LinkedIn</label>
+            </div>
+            <div>
+              <input type="checkbox" value="coding academy recommendation" name="hearaboutme" id="coding-academy-recommendation">
+              <label for="coding-academy-recommendation">Coding academy recommendation</label>
+            </div>
+          </div> 
+          <div class="container-radio">
+            Do you want to be contacted back?
+            <div>
+              <input type="radio" name="contactback" id="contactback-yes">
+              <label for="contactback-yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="contactback" id="contactback-no">
+              <label for="contactback-no">No</label>
+            </div>
+            <div>
+              <label for="birthdaywish">Optional birthday wish</label>
+              <input type="date">
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit">Submit</button>
+          </div>
+          <!-- <script src="scripts.js"></script> -->
+        </form> 
+      </div>
+    </div>
+
+    <footer class="container-footer container-fluid">
+      <div class="container-social-media-icons navbar">
+        <a class="linkedin-icon" href="https://www.linkedin.com/in/rachel-molina-39bb2624b/">
+          <img class="icon" src="../images/linkedin-icon.png" alt="image not found">
+        </a>
+        <a class="github-icon" href="https://github.com/ruru-dev">
+          <img class="icon" src="../images/github-icon.png" alt="image not found">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

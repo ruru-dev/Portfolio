@@ -1,0 +1,76 @@
+.container-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.about-me {
+  color: rgb(206, 146, 178);
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  letter-spacing: 7px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  padding-top: 30px;
+  color: rgb(231, 176, 205);
+}
+
+h2 {
+  font-size:large;
+  font-family: 'EB Garamond', serif;
+  padding-top: 10px;
+  color: rgb(145, 135, 139);
+  line-height: 1.8;
+}
+
+.container-grid {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.container-grid .row {
+  gap: 130px;
+}
+
+.philosophy-row {
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+section > img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media(max-width: 480px) {
+  .philosophy-row {
+    flex-wrap: wrap-reverse;
+  }
+
+  .container-grid .row {
+    gap: 20px
+  }
+ }
+
+ @media(min-width: 481px) and (max-width: 767px){
+  .philosophy-row {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  .experience-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-grid .row {
+    gap: 20px
+  }
+ }

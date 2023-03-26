@@ -1,0 +1,76 @@
+.container-main-content {
+  background-image: url("images/pink roses.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+}
+
+.introduction-message {
+  color: white;
+  font-size: 100px;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0px 100px;
+}
+
+.job-title-message {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 50px;
+  margin: 150px 100px 0px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+@media(max-width: 575px) {
+  .introduction-message {
+    font-size: 100px;
+    padding-top: 40px;
+    line-height: 1.4;
+ }
+
+ .job-title-message {
+  margin: 90px 20px;
+  font-size: 40px;
+  }
+}
+
+
+@media (min-width :681px) and (max-width: 1049px) {
+  .introduction-message {
+    line-height: 2;
+   }
+
+   .job-title-message {
+    margin: 20px;
+    }
+  }
+
+@media(min-width: 574px) and (max-width: 711px) {
+  .introduction-message {
+   font-size: 100px;
+  }
+
+  .job-title-message {
+    margin: 20px;
+    font-size: 40px;
+    }
+ }
+
+
+ @media(max-width: 480px) {
+  .introduction-message {
+   font-size: 80px;
+   padding-top: 40px;
+   line-height: 1.4;
+  }
+ }
+
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Satisfy', cursive; */

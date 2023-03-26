@@ -1,0 +1,121 @@
+.container-main-content {
+  margin: 40px 0px;
+}
+
+.contact-me-image {
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.contact-me-message {
+  position: absolute;
+  left: 40%;
+  bottom: 40%;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+}
+
+.container-form {
+  height: 500px;
+  background-color: whitesmoke;
+  border-radius: 60px;
+  margin: 40px;
+  padding: 50px;
+}
+
+form {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.input-label-top > label {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+.container-input {
+  width: 50%;
+}
+
+.container-input > input, textarea {
+  width: 100%;
+}
+
+.container-check, .container-radio {
+  margin: 10px;
+}
+
+.message {
+  margin-bottom: 70px;
+}
+
+input, textarea {
+  border-style: none;
+}
+
+.input-label-top {
+  margin-top: 15px;
+}
+
+button {
+  position: absolute;
+  bottom:80px;
+  left: 50%;
+  background-color: rgb(230, 139, 154);
+  border-style: none;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+@media(min-width: 1300px) {
+ .container-main-content {
+  width: 1300px;
+  margin: auto;
+ } 
+}
+
+@media(max-width: 700px) {
+  .container-form {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .message {
+    margin-bottom: 20px;
+  }
+
+  button {
+    position: static;
+    margin: auto;
+  }
+
+  div.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .container-input {
+    width: 100%;
+  }
+
+  .contact-me-message {
+    left: 25%;
+  }
+}
