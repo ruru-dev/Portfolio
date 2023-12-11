@@ -1,86 +1,47 @@
 .container-main-content {
-  margin: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
 }
 
-.contact-me-image {
-  height: 300px;
-  width: 100%;
-  margin-top: 30px;
+.container-main-content img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.container-image {
-  position: relative;
-  text-align: center;
+.container-contact-info-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  align-items: center;
 }
 
 .contact-me-message {
-  position: absolute;
-  left: 40%;
   bottom: 40%;
-  color: white;
   font-family: 'Great Vibes', cursive;
   font-size: 60px;
+  color: rgb(136, 130, 130);
 }
 
-.container-form {
-  height: 500px;
-  background-color: whitesmoke;
-  border-radius: 60px;
-  margin: 40px;
-  padding: 50px;
-}
-
-form {
-  height: inherit;
+.contact-channels {
+  font-family: 'Sacramento', cursive;
+  color: rgb(116, 111, 111);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
 }
 
-.input-label-top > label {
-  display: block;
-}
-
-textarea {
-  resize: none;
-}
-
-.container-input {
-  width: 50%;
-}
-
-.container-input > input, textarea {
-  width: 100%;
-}
-
-.container-check, .container-radio {
-  margin: 10px;
-}
-
-.message {
-  margin-bottom: 70px;
-}
-
-input, textarea {
-  border-style: none;
-}
-
-.input-label-top {
-  margin-top: 15px;
-}
-
-button {
-  position: absolute;
-  bottom:80px;
-  left: 50%;
-  background-color: rgb(230, 139, 154);
-  border-style: none;
-  color: white;
-  width: 150px;
-  height: 40px;
-  border-radius: 8px;
+.contact-channel-item {
+  font-family: 'Sacramento', cursive;
   font-size: 20px;
+}
+
+.contact-channels a {
+  text-decoration: none;
+  color: rgb(116, 111, 111);
 }
 
 @media(min-width: 1300px) {
@@ -91,31 +52,13 @@ button {
 }
 
 @media(max-width: 700px) {
-  .container-form {
-    flex-wrap: nowrap;
-    height: auto;
+  .container-main-content {
+    flex-wrap: wrap;
   }
 
-  .message {
-    margin-bottom: 20px;
+  .container-contact-info-content {
+    padding-top: 40px;
+    padding-left: 20px;
   }
 
-  button {
-    position: static;
-    margin: auto;
-  }
-
-  div.button {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .container-input {
-    width: 100%;
-  }
-
-  .contact-me-message {
-    left: 25%;
-  }
 }
